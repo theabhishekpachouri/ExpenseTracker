@@ -1,4 +1,4 @@
- * {
+        *{
             margin: 0;
             padding: 0;
             box-sizing: border-box;
@@ -263,12 +263,12 @@
         }
 
         .stat-icon {
-            font-size: 2.5rem;
+            font-size: 4.5rem;
             position: absolute;
             right: 1.5rem;
             top: 50%;
             transform: translateY(-50%);
-            opacity: 0.2;
+            opacity: 1.5;
         }
 
         
@@ -697,3 +697,38 @@
         .counting {
             animation: countUp 0.5s ease-out;
         }
+
+.hamburger {
+  display: none;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-right: auto;
+}
+
+@media (max-width: 768px) {
+  .nav-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .nav-btn {
+    width: 100%;
+    text-align: left;
+  }
+}

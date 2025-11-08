@@ -12,22 +12,26 @@
 </head>
 <body>
     <header>
-        <br>
+        
         <div class="header-content">
             <div class="logo">Expense Tracker </div>
             <div class="date-display" id="currentDate"></div>
         </div>
         <br>
     <nav>
-        <div class="nav-container" >
-            <button class="nav-btn active" onclick="showSection('dashboard')">📊 Dashboard</button>
-            <button class="nav-btn" onclick="showSection('add-expense')">➕ Add Expense</button>
-            <button class="nav-btn" onclick="showSection('view-expenses')">📝 View Expenses</button>
-            <button class="nav-btn" onclick="showSection('analytics')">📈 Analytics</button>
-            <button class="nav-btn" onclick="showSection('ai-advice')">🤖 AI Advice</button>
-            <button class="nav-btn" onclick="showSection('categories')">🗂️ Categories</button>
-        </div>
-    </nav>
+  <div class="nav-container">
+    <button class="hamburger" onclick="toggleMenu()">☰</button>
+    <div class="nav-links" id="navLinks">
+      <button class="nav-btn active" onclick="showSection('dashboard')">📊 Dashboard</button>
+      <button class="nav-btn" onclick="showSection('add-expense')">➕ Add Expense</button>
+      <button class="nav-btn" onclick="showSection('view-expenses')">📝 View Expenses</button>
+      <button class="nav-btn" onclick="showSection('analytics')">📈 Analytics</button>
+      <button class="nav-btn" onclick="showSection('ai-advice')">🤖 AI Advice</button>
+      <button class="nav-btn" onclick="showSection('categories')">🗂️ Categories</button>
+    </div>
+  </div>
+</nav>
+
        
     </header>
 
